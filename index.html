@@ -24,6 +24,7 @@
     
     .container, .row, .col, .glass, .glassmorphic-card {
   max-width: 100%;
+  animation: fadeIn 2s ease-in-out;
 }
     .glass {
       background: rgba(255, 255, 255, 0.1);
@@ -35,7 +36,7 @@
       padding: 30px;
     }
     .navbar {
-      background:transparent;
+      background:linear-gradient(#16213e,#0f3460);
     }
 
     .navbar-brand {
@@ -64,6 +65,9 @@
       background: linear-gradient(45deg, #5f0db7, #1f66d0);
     }
 
+    .social-icons{
+      animation: fadeIn 2s ease-in-out;
+    }
     .social-icons a {
       color: white;
       font-size: 1.5rem;
@@ -75,10 +79,21 @@
       color: #17c0eb;
     }
     .home-img {
-      max-width:100%;
+      max-width: 80%;
       height: auto;
-      border-radius:10%;
+      border-radius: 50%;
       margin-bottom: 10px;
+      box-shadow: 30px 5px 20px rgba(4, 195, 242, 0.3);
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      0% {
+      opacity: 0;
+      }
+      100% {
+      opacity: 1;
+      }
     }
     #about {
   background: linear-gradient(135deg, #0f3460, #16213e, #1a1a2e);
@@ -244,7 +259,7 @@ footer .quote {
       <div class="row align-items-center">
         <!-- Text Content -->
         <div class="col-lg-6">
-          <div class="glass">
+          <div class="glass animate__animated animate__fadeIn">
             <h1 class="display-4">RISHIKESS</h1>
             <p class="lead">Full Stack Developer</p>
             <!-- Social Icons -->
@@ -262,7 +277,7 @@ footer .quote {
         </div>
         <!-- Image -->
         <div class="col-lg-6 mt-4 mt-lg-0 text-center">
-          <img src="rishi (1).jpeg" alt="" class="home-img">
+          <img src="Picsart_24-10-29_11-33-20-658.jpg" alt="" class="home-img">
         </div>
       </div>
     </div>
@@ -332,10 +347,8 @@ footer .quote {
             <div class="project-image-container mb-3">
               <img src="top project.jpeg" alt="Project 1" class="img-fluid rounded">
             </div>
-            <h3 class="text-white">Tomato-food delivery app</h3>
-            <p class="text-light">A seamless food delivery app built with the MERN stack, offering a user-friendly interface for
-browsing menus, placing orders, and real-time tracking. Features include secure authentication,
-fast performance, and responsive design for all devices.</p>
+            <h3 class="text-white">Project 1</h3>
+            <p class="text-light">A brief description of the project goes here. Explain what it does in a few lines.</p>
             <div class="d-flex align-items-center justify-content-center mt-3">
               <a href="https://yourprojectlink1.com" target="_blank" class="d-flex align-items-center text-decoration-none">
                 <div class="rounded-circle bg-info text-white d-flex align-items-center justify-content-center" style="width: 50px; height: 50px;">
@@ -353,10 +366,8 @@ fast performance, and responsive design for all devices.</p>
             <div class="project-image-container mb-3">
               <img src="projects (2).jpeg" alt="Project 2" class="img-fluid rounded">
             </div>
-            <h3 class="text-white">Code-Sphere Live code editor</h3>
-            <p class="text-light">Developed CodeSphere, an interactive live code editor with real-time collaboration and
-responsive streamlined user experience with advanced styling and WebSocket integration for
-seamless updates across multiple clients.</p>
+            <h3 class="text-white">Project 2</h3>
+            <p class="text-light">A brief description of the project goes here. Explain what it does in a few lines.</p>
             <div class="d-flex align-items-center justify-content-center mt-3">
               <a href="https://live-code-codesphere.onrender.com/" target="_blank" class="d-flex align-items-center text-decoration-none">
                 <div class="rounded-circle bg-warning text-white d-flex align-items-center justify-content-center" style="width: 50px; height: 50px;">
@@ -374,12 +385,10 @@ seamless updates across multiple clients.</p>
             <div class="project-image-container mb-3">
               <img src="projects (1).jpeg" alt="Project 3" class="img-fluid rounded">
             </div>
-            <h3 class="text-white">Expense Tracker</h3>
-            <p class="text-light">Developed a responsive Expense Tracker application with advanced features such as expense
-addition, editing, deletion, tracking, and category-wise recommendations, ensuring a
-professional and user-friendly interface.</p>
+            <h3 class="text-white">Project 3</h3>
+            <p class="text-light">A brief description of the project goes here. Explain what it does in a few lines.</p>
             <div class="d-flex align-items-center justify-content-center mt-3">
-              <a href="https://shorturl.at/uG4ht" target="_blank" class="d-flex align-items-center text-decoration-none">
+              <a href="https://skynovaairlines.netlify.app/" target="_blank" class="d-flex align-items-center text-decoration-none">
                 <div class="rounded-circle bg-success text-white d-flex align-items-center justify-content-center" style="width: 50px; height: 50px;">
                   <i class="bi bi-arrow-right"></i>
                 </div>
@@ -395,12 +404,10 @@ professional and user-friendly interface.</p>
             <div class="project-image-container mb-3">
               <img src="projects (3).jpeg" alt="Project 4" class="img-fluid rounded">
             </div>
-            <h3 class="text-white">Sky-Nova airlines</h3>
-            <p class="text-light">Developed a futuristic, responsive airline reservation web application using React and Vite, with
-a sleek, modern design and seamless user experience. Implemented fixed navigation, interactive
-sections for home, about, and contact pages, ensuring optimal performance across devices.</p>
+            <h3 class="text-white">Project 4</h3>
+            <p class="text-light">A brief description of the project goes here. Explain what it does in a few lines.</p>
             <div class="d-flex align-items-center justify-content-center mt-3">
-              <a href="https://skynovaairlines.netlify.app/" target="_blank" class="d-flex align-items-center text-decoration-none">
+              <a href="https://shorturl.at/uG4ht" target="_blank" class="d-flex align-items-center text-decoration-none">
                 <div class="rounded-circle bg-danger text-white d-flex align-items-center justify-content-center" style="width: 50px; height: 50px;">
                   <i class="bi bi-arrow-right"></i>
                 </div>
@@ -424,31 +431,40 @@ sections for home, about, and contact pages, ensuring optimal performance across
   
       <!-- Contact Form -->
       <div class="glass p-4">
-        <form id="contact-form" action="rishikesscse@gmail.com" method="post" enctype="text/plain">
-          <div class="row justify-content-center">
-            <!-- Name -->
-            <div class="col-md-6 mb-3">
-              <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+        <section id="contact" class="py-5">
+          <div class="container text-center">
+            <!-- Contact Heading -->
+            <div class="glass mb-5 p-4">
+              <h2 class="display-6 text-white">Contact Me</h2>
             </div>
-            <!-- Email -->
-            <div class="col-md-6 mb-3">
-              <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+        
+            <!-- Contact Form -->
+            <div class="glass p-4">
+              <form id="contact-form" action="rishikesscse@gmail.com" method="post" enctype="text/plain">
+                <div class="row justify-content-center">
+                  <!-- Name -->
+                  <div class="col-md-6 mb-3">
+                    <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+                  </div>
+                  <!-- Email -->
+                  <div class="col-md-6 mb-3">
+                    <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+                  </div>
+                  <!-- Contact Number -->
+                  <div class="col-md-6 mb-3">
+                    <input type="text" name="contact" class="form-control" placeholder="Your Contact Number" required>
+                  </div>
+                  <!-- Message -->
+                  <div class="col-md-6 mb-3">
+                    <textarea name="message" class="form-control" rows="4" placeholder="Your Message" required></textarea>
+                  </div>
+                </div>
+                <!-- Send Button -->
+                <div class="text-center">
+                  <button type="submit" class="btn btn-gradient btn-lg text-white">Send Message</button>
+                </div>
+              </form>
             </div>
-            <!-- Contact Number -->
-            <div class="col-md-6 mb-3">
-              <input type="text" name="contact" class="form-control" placeholder="Your Contact Number" required>
-            </div>
-            <!-- Message -->
-            <div class="col-md-6 mb-3">
-              <textarea name="message" class="form-control" rows="4" placeholder="Your Message" required></textarea>
-            </div>
-          </div>
-          <!-- Send Button -->
-          <div class="text-center">
-            <button type="submit" class="btn btn-gradient btn-lg text-white">Send Message</button>
-          </div>
-        </form>
-      </div>
     </div>
   </section>
   <section>
@@ -458,7 +474,7 @@ sections for home, about, and contact pages, ensuring optimal performance across
       <!-- Contact Info -->
       <div class="col-md-4 mb-3">
         <h5>Contact</h5>
-        <p>Email: <a href="mailto:developer@example.com" class="text-decoration-none text-primary">rishikesscse@gmail.com</a></p>
+        <p>Email: <a href="prishikess@gmail.com" class="text-decoration-none text-primary">rishikesscse@gmail.com</a></p>
         <p>Phone:+91 8667783006</p>
         <p>Location:Tirupur,Tamilnadu-641606</p>
       </div>
@@ -487,13 +503,7 @@ sections for home, about, and contact pages, ensuring optimal performance across
       </div>
     </div>
     </section>
-    <!-- Inspirational Quote -->
-    <div class="row mt-4">
-      <div class="col-12">
-        <p class="fw-bold fst-italic text-light">"Code is not just code; it's the bridge between imagination and reality."</p>
-      </div>
-    </div>
-
+  
     <!-- Footer Bottom -->
     <hr class="bg-light">
     <p class="mb-0">© 2024 Rishi. All Rights Reserved.</p>
@@ -515,3 +525,4 @@ document.getElementById("contact-form").addEventListener("submit", function (e) 
       alert("Error in sending message: " + error.text);
     });
 });
+</script>
